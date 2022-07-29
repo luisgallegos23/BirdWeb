@@ -369,13 +369,7 @@ def editmeeting():
         cursor.execute("update meetings set groupID=%s, dateTime=%s, location=%s, meetingTopic=%s, stateName=%s where groupID=%s and dateTime=%s", [myGroupID[0], dateTime, location, meetingTopic, stateName, myGroupID[0], dateTimeOld])
         
         conn.commit()
-        return render_template("editMeeting.html", step="update_database")
-
-
-
-
-
-    
+        return render_template("editMeeting.html", step="update_database")   
         
 
 @app.route("/checklist", methods=['post','get'])
