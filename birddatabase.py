@@ -113,4 +113,5 @@ def main():
   add_states_from_csv("states.csv")
   add_user_from_csv("users.csv")
   
+# main() // only used once to add all the data to the database
 
